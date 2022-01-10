@@ -112,9 +112,6 @@ const cloth:  {
 //戻り値の型もつけておいた方がいよい
 
 
-function add(num1: number, num2: number): number {
-    return num1 + num2
-}
 
 
 function sayHello(): void {
@@ -134,3 +131,22 @@ let tmp: undefined;
 // void→何も返さないという型
 
 // undefined型はundefinedとnullを扱うことができる
+
+
+
+// 関数宣言時の型と関数を保持する変数に型をつける場合の違いについて
+
+function add(num1: number, num2: number): number {
+    return num1 + num2
+}
+
+// :と=>の違い
+
+const anotherAdd: (n1: number, n2: number) => number = function (num1: number, num2: number): number {
+    return num1 + num2
+};
+
+const doubleNumber = (number: number): number => number * 2;
+
+
+// const doubleNumber: number (num: number) => number = num => number * 2

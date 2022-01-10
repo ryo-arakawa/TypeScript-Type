@@ -72,9 +72,6 @@ var cloth = {
 // 必ず関数には型をつける⇨anyになってしまうから
 // パラメータの後ろに戻り値をつける
 //戻り値の型もつけておいた方がいよい
-function add(num1, num2) {
-    return num1 + num2;
-}
 function sayHello() {
     console.log('Hello!');
 }
@@ -87,3 +84,13 @@ var tmp;
 // returnの場合にはundefinedでも使える
 // void→何も返さないという型
 // undefined型はundefinedとnullを扱うことができる
+// 関数宣言時の型と関数を保持する変数に型をつける場合の違いについて
+function add(num1, num2) {
+    return num1 + num2;
+}
+// :と=>の違い
+var anotherAdd = function (num1, num2) {
+    return num1 + num2;
+};
+var doubleNumber = function (number) { return number * 2; };
+// const doubleNumber: number (num: number) => number = num => number * 2
