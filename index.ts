@@ -35,3 +35,41 @@ const book: [string, number, boolean] = ['business', 1500, false];
 book.push(21)
 
 // 初期値は厳しいが、その後は緩い
+
+// const CoffeeSize = {
+//     SHORT: 'SHORT',
+//     TALL: 'TALL',
+//     GRANDE: 'GRANDE',
+//     VENTI: 'VENTIE'
+// }
+
+
+// この時sizeが四つの値しか取らないようにしたい
+// 列挙型を利用する
+
+
+// enum CoffeeSize  {
+//     SHORT = 'SHORT',
+//     TALL = 'TALL',
+//     GRANDE = 'GRANDE',
+//     VENTI = 'VENTIE'
+// }
+
+
+
+enum CoffeeSize  {
+    SHORT,
+    TALL,
+    GRANDE,
+    VENTI
+}
+
+const coffee = {
+    hot: true,
+    size: CoffeeSize.TALL
+}
+
+coffee.size = CoffeeSize.GRANDE;
+
+// javascritptは命名規則でキャメルケースを使う
+// typescriptの場合には大文字から始まる(パスカルケースが一般)

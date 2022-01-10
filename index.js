@@ -24,3 +24,30 @@ var fruit = fruits[0];
 //tapple
 var book = ['business', 1500, false];
 book.push(21);
+// 初期値は厳しいが、その後は緩い
+// const CoffeeSize = {
+//     SHORT: 'SHORT',
+//     TALL: 'TALL',
+//     GRANDE: 'GRANDE',
+//     VENTI: 'VENTIE'
+// }
+// この時sizeが四つの値しか取らないようにしたい
+// 列挙型を利用する
+// enum CoffeeSize  {
+//     SHORT = 'SHORT',
+//     TALL = 'TALL',
+//     GRANDE = 'GRANDE',
+//     VENTI = 'VENTIE'
+// }
+var CoffeeSize;
+(function (CoffeeSize) {
+    CoffeeSize[CoffeeSize["SHORT"] = 0] = "SHORT";
+    CoffeeSize[CoffeeSize["TALL"] = 1] = "TALL";
+    CoffeeSize[CoffeeSize["GRANDE"] = 2] = "GRANDE";
+    CoffeeSize[CoffeeSize["VENTI"] = 3] = "VENTI";
+})(CoffeeSize || (CoffeeSize = {}));
+var coffee = {
+    hot: true,
+    size: CoffeeSize.TALL
+};
+coffee.size = CoffeeSize.GRANDE;
