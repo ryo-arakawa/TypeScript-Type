@@ -69,3 +69,21 @@ var cloth = {
     color: 'white',
     size: 'medium'
 };
+// 必ず関数には型をつける⇨anyになってしまうから
+// パラメータの後ろに戻り値をつける
+//戻り値の型もつけておいた方がいよい
+function add(num1, num2) {
+    return num1 + num2;
+}
+function sayHello() {
+    console.log('Hello!');
+}
+function sayGoodbye() {
+    console.log('Hello!');
+    return;
+}
+console.log(sayHello());
+var tmp;
+// returnの場合にはundefinedでも使える
+// void→何も返さないという型
+// undefined型はundefinedとnullを扱うことができる

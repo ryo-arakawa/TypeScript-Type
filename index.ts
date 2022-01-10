@@ -106,3 +106,31 @@ const cloth:  {
     color: 'white',
     size: 'medium'
 }
+
+// 必ず関数には型をつける⇨anyになってしまうから
+// パラメータの後ろに戻り値をつける
+//戻り値の型もつけておいた方がいよい
+
+
+function add(num1: number, num2: number): number {
+    return num1 + num2
+}
+
+
+function sayHello(): void {
+    console.log('Hello!');
+}
+
+function sayGoodbye(): undefined {
+    console.log('Hello!');
+    return;
+}
+
+console.log(sayHello());
+let tmp: undefined;
+
+// returnの場合にはundefinedでも使える
+
+// void→何も返さないという型
+
+// undefined型はundefinedとnullを扱うことができる
