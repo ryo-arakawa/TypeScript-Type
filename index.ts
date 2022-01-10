@@ -24,6 +24,14 @@ const person = {
     },
         age: 21
 }
-console.log(person.gender);  //ないものはちゃんと弾かれる
+// console.log(person.gender);  //ないものはちゃんと弾かれる
 
 // 配列
+const fruits = ['Apple', 'Banana', 'Grape']
+const fruit = fruits[0];
+
+//tapple
+const book: [string, number, boolean] = ['business', 1500, false];
+book.push(21)
+
+// 初期値は厳しいが、その後は緩い
