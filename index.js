@@ -63,5 +63,11 @@ banana = anything;
 var unionType = 10;
 var unionTypes = [21, 'hello'];
 // リテラル型　決まった値しか代入できない
-var apple = 'hello';
+var apple = 'apple';
 //typescriptはletを使うことでstring・constを使うことでリテラル型を採用する
+// union型とリテラル型の合体
+var clothSize = 'large';
+var cloth = {
+    color: 'white',
+    size: 'medium'
+};

@@ -88,6 +88,18 @@ let unionType: number | string = 10;
 let unionTypes: (number | string)[] = [21, 'hello']
 
 // リテラル型　決まった値しか代入できない
-const apple: 'apple' = 'hello'
+const apple: 'apple' = 'apple'
 
 //typescriptはletを使うことでstring・constを使うことでリテラル型を採用する
+
+
+
+// union型とリテラル型の合体
+let clothSize: 'small' | 'medium' | 'large' = 'large'
+const cloth:  {
+    color: string;
+    size: 'small' | 'medium' | 'large'
+} = {
+    color: 'white',
+    size: 'medium'
+}
