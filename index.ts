@@ -82,3 +82,7 @@ anything = {};
 let banana = 'banana';
 banana = anything;
 
+// union型について
+
+let unionType: number | string = 10;
+let unionTypes: (number | string)[] = [21, 'hello']

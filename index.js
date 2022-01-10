@@ -59,3 +59,6 @@ anything = 'hello';
 anything = {};
 var banana = 'banana';
 banana = anything;
+// union型について
+var unionType = 10;
+var unionTypes = [21, 'hello'];
