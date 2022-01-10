@@ -86,3 +86,8 @@ banana = anything;
 
 let unionType: number | string = 10;
 let unionTypes: (number | string)[] = [21, 'hello']
+
+// リテラル型　決まった値しか代入できない
+const apple: 'apple' = 'hello'
+
+//typescriptはletを使うことでstring・constを使うことでリテラル型を採用する
