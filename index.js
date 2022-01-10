@@ -51,3 +51,11 @@ var coffee = {
     size: CoffeeSize.TALL
 };
 coffee.size = CoffeeSize.GRANDE;
+// javascritptは命名規則でキャメルケースを使う
+// typescriptの場合には大文字から始まる(パスカルケースが一般)
+// any型について
+var anything = true;
+anything = 'hello';
+anything = {};
+var banana = 'banana';
+banana = anything;
