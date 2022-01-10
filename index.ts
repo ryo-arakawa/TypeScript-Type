@@ -95,10 +95,13 @@ const apple: 'apple' = 'apple'
 
 
 // union型とリテラル型の合体
-let clothSize: 'small' | 'medium' | 'large' = 'large'
+// let clothSize: 'small' | 'medium' | 'large' = 'large'
+type clothSize = 'small' | 'medium' | 'large'
+
+let clothSize: clothSize = 'large';
 const cloth:  {
     color: string;
-    size: 'small' | 'medium' | 'large'
+    size: clothSize
 } = {
     color: 'white',
     size: 'medium'
