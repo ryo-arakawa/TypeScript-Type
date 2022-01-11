@@ -150,3 +150,13 @@ const doubleNumber = (number: number): number => number * 2;
 
 
 // const doubleNumber: number (num: number) => number = num => number * 2
+
+
+// callback関数の型の書き方について
+function doubleAndHandle(num: number, cb: (num: number) => number): void  {
+    const doubleNum = cb(num *2);
+    console.log(doubleNum);
+}
+doubleAndHandle(21, doubleNum => {
+    return doubleNum
+});

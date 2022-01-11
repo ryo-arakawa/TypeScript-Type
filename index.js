@@ -94,3 +94,11 @@ var anotherAdd = function (num1, num2) {
 };
 var doubleNumber = function (number) { return number * 2; };
 // const doubleNumber: number (num: number) => number = num => number * 2
+// callback関数の型の書き方について
+function doubleAndHandle(num, cb) {
+    var doubleNum = cb(num * 2);
+    console.log(doubleNum);
+}
+doubleAndHandle(21, function (doubleNum) {
+    return doubleNum;
+});
