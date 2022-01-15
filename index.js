@@ -114,3 +114,9 @@ if (typeof unknownInput === 'string') {
     text = unknownInput;
 }
 // unknown型はなんでも入れられるが使う時は172行目のように補償が必要
+// never型
+function error(message) {
+    throw new Error(message);
+}
+console.log(error('This is an error'));
+// 何も返さない
