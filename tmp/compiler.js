@@ -6,3 +6,4 @@ console.log(hello.toLowerCase());
 // コマンドひとつで全てコンパイル
 // tsc --init
 // これを打つことでtscだけでOKになる
+//# sourceMappingURL=compiler.js.map
