@@ -1,5 +1,5 @@
-console.log('compile!');
-
+let hello = 'hello';
+console.log(hello.toLowerCase());
 // 2つのファイルをcompile
 // tsc compiler.ts index.ts
 
