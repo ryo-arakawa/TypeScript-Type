@@ -13,7 +13,7 @@ let back: string = `hello`;
 
 let hasValue = true;
 
-let hello; //any なんでもok
+let ok; //any なんでもok
 
 // オブジェクトに型をつける
 
