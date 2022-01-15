@@ -102,3 +102,15 @@ function doubleAndHandle(num, cb) {
 doubleAndHandle(21, function (doubleNum) {
     return doubleNum;
 });
+// unknown型
+var unknownInput;
+var anyInput;
+var text;
+unknownInput = 'hello';
+anyInput = 21;
+unknownInput = true;
+text = anyInput;
+if (typeof unknownInput === 'string') {
+    text = unknownInput;
+}
+// unknown型はなんでも入れられるが使う時は172行目のように補償が必要

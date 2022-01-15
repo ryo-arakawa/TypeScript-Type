@@ -160,3 +160,18 @@ function doubleAndHandle(num: number, cb: (num: number) => number): void  {
 doubleAndHandle(21, doubleNum => {
     return doubleNum
 });
+
+// unknown型
+let unknownInput: unknown;
+let anyInput: any;
+let text: string;
+unknownInput = 'hello';
+anyInput = 21;
+unknownInput = true;
+text = anyInput;
+if (typeof unknownInput === 'string') {
+    text = unknownInput;
+}
+
+
+// unknown型はなんでも入れられるが使う時は172行目のように補償が必要
