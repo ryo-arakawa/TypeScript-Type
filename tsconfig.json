@@ -97,5 +97,18 @@
     /* Completeness */
     // "skipDefaultLibCheck": true,                      /* Skip type checking .d.ts files that are included with TypeScript. */
     "skipLibCheck": true                                 /* Skip type checking all .d.ts files. */
-  }
+  },
+  "include": [
+    "index.ts"
+  ],
+  "exclude": [
+    "tmp/compiler.ts",
+    "*.spec.ts",
+    "node_modules"
+  ],
+  "files": [
+    "tmp/compiler.ts"
+  ]
 }
+// excludeの方がncl腕よりも強い
+// include - exclude + files
