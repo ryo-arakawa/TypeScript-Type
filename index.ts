@@ -183,3 +183,6 @@ function error( message: string) {
 console.log(error('This is an error'));
 
 // 何も返さない
+
+// watchモード
+//  tsc index.ts --watch
