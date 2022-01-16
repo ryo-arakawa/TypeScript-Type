@@ -7,3 +7,12 @@ console.log(hi.toLowerCase());
 // tsc --init
 
 // これを打つことでtscだけでOKになる
+
+let implicitAny
+implicitAny = 'implicityAny';
+implicitAny.toUpperCase
+
+// 一般的な型は全てnullを含む
+
+let onlyNull: null = null;
+let onlyUndefined: undefined = undefined;

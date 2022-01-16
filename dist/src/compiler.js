@@ -6,3 +6,9 @@ console.log(hi.toLowerCase());
 // コマンドひとつで全てコンパイル
 // tsc --init
 // これを打つことでtscだけでOKになる
+let implicitAny;
+implicitAny = 'implicityAny';
+implicitAny.toUpperCase;
+// 一般的な型は全てnullを含む
+let onlyNull = null;
+let onlyUndefined = undefined;
